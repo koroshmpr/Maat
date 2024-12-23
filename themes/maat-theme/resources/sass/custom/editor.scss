@@ -1,0 +1,40 @@
+.editor {
+    h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+        margin-bottom: 1rem;
+    }
+}
+strong{
+    font-weight: 600!important;
+}
+
+//list styles
+ol {
+    list-style-type: urdu !important;
+}
+
+ul, ol {
+    padding: 0;
+    list-style-position: inside !important;
+    line-height: 1.8;
+}
+.blog-pagination {
+    direction: ltr;
+    font-family : "Ravi";
+}
+#startProgressBar article {
+    h2 , h3, h4, h5, h6 {
+        margin-top: 1rem;
+    }
+    > *::selection , a::selection {
+    background-color: $primary;
+    color: white;
+    }
+}
+.gfield_validation_message {
+    display: none!important;
+}
+option:checked,
+option:hover {
+    background-color: $primary!important;
+    color:white;
+}

@@ -1,0 +1,344 @@
+//custom classes
+@import "custom/variables";
+// Bootstrap
+@import 'modules/bootstrap';
+
+//custom base classes
+@import "custom/base";
+@import "custom/editor";
+@import "custom/button";
+
+// header
+@import "custom/header";
+
+@import "responsive";
+
+
+//swiper pagination
+.swiper-pagination-total {
+  padding-top: 10px;
+  @extend .fw-bold;
+}
+
+//client slider
+
+.client-swiper {
+  .swiper-slide {
+    transition: transform 0.4s ease-in-out;
+    transform: scale(.6) !important;
+    filter: grayscale(1);
+
+    &.scaled-down {
+      transform: scale(0.9) !important;
+    }
+  }
+
+  .swiper-slide-active {
+    transform: scale(1.2) !important;
+    filter: grayscale(0) !important;
+  }
+}
+
+
+//about us svg
+
+#about_svg polygon, #about_svg line, #about_svg path, #about_svg polyline {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+
+}
+
+.draw polygon, .draw line, .draw path, .draw polyline {
+  animation: draw 4s ease-in forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+//svg animation on service screen
+//.svg-list path {
+//  opacity: 0;
+//
+//}
+
+//tabs
+.filterPortfolio.nav-link {
+  background-color: #F1F1F1;
+}
+
+//pagination
+.page-item > a {
+  @extend .text-black-50;
+}
+
+.page-numbers {
+  @extend .text-black-50;
+
+  &.page-numbers.current {
+    @extend .text-dark, .fw-bold;
+  }
+}
+
+//social icons ( footer and Contact )
+
+
+// services card text
+.services-card {
+  ul {
+    list-style: square;
+    li::marker {
+      color:$primary;
+    }
+  }
+
+}
+.card-text {
+  div {
+    height: 70px;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+  }
+
+  span {
+    bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+//form
+.gf_progressbar_title {
+  @extend .text-dark, .fs-3, .fw-bold;
+}
+
+.gf_progressbar {
+  border-radius: 0px !important;
+
+  .gf_progressbar_percentage {
+    background-color: #00B3AC !important;
+    border-radius: 0px !important;
+  }
+}
+
+.gform_wrapper.gravity-theme .gform_fields {
+  grid-row-gap: 2px !important;
+}
+
+.page-template-work input[type="submit"] {
+
+}
+
+input,
+textarea {
+  @extend .form-control, .border-0, .border-bottom, .border-primary, .rounded-0;
+  box-shadow: none !important;
+}
+
+select {
+  @extend .form-select;
+}
+
+.gform_validation_errors {
+  @extend .d-none;
+}
+
+.gform_confirmation_wrapper_3 {
+  @extend .d-flex, .justify-content-center, .fs-2, .py-4;
+}
+
+input[type="button"],
+input[type="submit"], {
+  @extend .btn, .btn-primary, .border-1, .border-primary, .rounded-0;
+  width: auto !important;
+}
+
+#ui-datepicker-div {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+}
+
+//services svg
+.svg-service polygon, .svg-service line, .svg-service path, .svg-service polyline {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+
+}
+
+.drawServices polygon, .drawServices line, .drawServices path, .drawServices polyline {
+  animation: draw 4s ease-in forwards;
+}
+
+@keyframes drawServices {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+//SVG Services
+.svg-service svg:not(.svgDown  , .svg-sv) {
+  path, line, polyline, polygon {
+    fill: none !important;
+    stroke: #00aca9;
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
+    stroke-width: 1.5px !important;
+  }
+}
+
+.svg-service-second svg:not(.svgDown  , .svg-sv) {
+  path, line, polyline, polygon {
+    fill: none !important;
+    stroke: #00aca9;
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
+    stroke-width: 2.5px !important;
+  }
+}
+
+.home .svg-service {
+  @extend .bg-secondary;
+
+  > div {
+    @extend .border-warning;
+  }
+
+  &:hover {
+    @extend .bg-warning;
+
+    > div {
+      @extend .border-primary;
+    }
+
+    .service-title {
+      @extend .text-white;
+    }
+
+    path, line, polyline, polygon {
+      stroke: white !important;
+      fill: white
+    }
+
+    rect {
+      fill: white
+    }
+  }
+}
+
+//landing page
+#landing text {
+  text-transform: uppercase;
+  animation: stroke 4.5s alternate;
+  stroke-width: 2;
+  //fill: #000;
+  font-size: 140px;
+  transform-origin: center;
+}
+
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: rgba(0, 181, 172, 1);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: rgba(0, 181, 172, 1);
+  }
+  80% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: rgba(0, 181, 172, 1);
+    stroke-width: 3;
+  }
+  100% {
+    fill: rgba(0, 0, 0, 1);
+    stroke: rgba(0, 181, 172, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+
+//blog
+.card-image {
+  background: $primary;
+  height: 250px;
+
+  .card-title {
+    color: $danger;
+  }
+
+  .post-number {
+    color: white;
+  }
+}
+
+//blog single
+#startProgressBar > * {
+  line-height: 2.2;
+}
+
+body.admin-bar {
+  .progress-container {
+    top: 100px !important
+  }
+}
+
+.progress {
+  height: 0.5rem;
+}
+
+.breadcrumb-item a {
+  color: $dark
+}
+
+.text-link a {
+  @extend .text-primary;
+}
+
+// modal
+.portfolio-modal.show {
+  backdrop-filter: blur(10px);
+}
+
+// portfolio
+.portfolio-dialog {
+  transform: translateY(-50%) !important;
+  top:50%;
+}
+.portfolio-card {
+  .play_button {
+    transition: all 0.4s ease-out;
+    width: 80px;
+    height: 80px;
+    i {
+      line-height: 0;
+      font-size: 6.5rem ;
+      cursor: pointer;
+    }
+  }
+
+  img {
+    transition: 0.3s ease-out;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+}
+.col-md-3 .portfolio-card {
+  .play_button i {
+    font-size: 3.5rem
+  }
+}

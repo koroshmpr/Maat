@@ -1,0 +1,33 @@
+<svg viewBox="0 0 1320 500">
+    <text class="text-uppercase" x="50%" y="50%" dy="-9em" text-anchor="middle" fill="black">
+        maat marcom holding
+    </text>
+    <g id="landing">
+        <text x="50%" y="50%" dy="-0.5em" text-anchor="middle" fill="black">
+            MAKE IT
+        </text>
+        <text x="50%" y="50%" dy="1.5em" text-anchor="middle" fill="black">
+            STUNNING
+        </text>
+    </g>
+    <text class="text-capitalize" x="50%" y="50%" dy="13em" text-anchor="middle" fill="black">
+        Advertising And Marketing Agency
+    </text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 647.53 623.17">
+<defs>
+    <style>.cls-1{font-size:131.21px;fill:#1d1d1b;font-family:SofiaPro-Bold, Sofia
+        Pro;font-weight:700;}.cls-2{font-size:19px;fill:#00b5ac;font-family:SofiaPro-Light, Sofia Pro;font-weight:300;}
+    </style>
+</defs>
+<g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+        <text class="cls-1" transform="translate(68.89 289.48)">MAKE IT
+            <tspan x="-68.89" y="106.52">STUNNING</tspan>
+        </text>
+        <text class="cls-2" transform="translate(175.97 618.27)">Advertising And Marketing Agency</text>
+        <text class="cls-2" transform="translate(207.3 16.05)">MAAT MARCOM HOLDING</text>
+    </g>
+</g>
+</svg>
